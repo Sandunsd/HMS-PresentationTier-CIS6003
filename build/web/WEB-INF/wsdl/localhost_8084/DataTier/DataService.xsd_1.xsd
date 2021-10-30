@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://DataServices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://DataServices/">
+
+<xs:element name="addCustomer" type="tns:addCustomer" />
+
+<xs:element name="addCustomerResponse" type="tns:addCustomerResponse" />
+
+<xs:element name="checkEmail" type="tns:checkEmail" />
+
+<xs:element name="checkEmailResponse" type="tns:checkEmailResponse" />
+
+<xs:element name="checkUsername" type="tns:checkUsername" />
+
+<xs:element name="checkUsernameResponse" type="tns:checkUsernameResponse" />
+
+<xs:element name="customer" type="tns:customer" />
+
+<xs:element name="getCustomer" type="tns:getCustomer" />
+
+<xs:element name="getCustomerResponse" type="tns:getCustomerResponse" />
+
+<xs:element name="listAllCustopmers" type="tns:listAllCustopmers" />
+
+<xs:element name="listAllCustopmersResponse" type="tns:listAllCustopmersResponse" />
+
+<xs:element name="updateCustomer" type="tns:updateCustomer" />
+
+<xs:element name="updateCustomerResponse" type="tns:updateCustomerResponse" />
+
+<xs:complexType name="listAllCustopmers">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listAllCustopmersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customer" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customer">
+<xs:sequence>
+<xs:element name="cusEmail" type="xs:string" minOccurs="0" />
+<xs:element name="cusUsername" type="xs:string" minOccurs="0" />
+<xs:element name="cusPassword" type="xs:string" minOccurs="0" />
+<xs:element name="cusNIC" type="xs:string" minOccurs="0" />
+<xs:element name="cusPhone" type="xs:string" minOccurs="0" />
+<xs:element name="cusDOB" type="xs:string" minOccurs="0" />
+<xs:element name="cusGender" type="xs:string" minOccurs="0" />
+<xs:element name="cusBloodType" type="xs:string" minOccurs="0" />
+<xs:element name="cusJoinDate" type="xs:string" minOccurs="0" />
+<xs:element name="cusEmerContact" type="xs:string" minOccurs="0" />
+<xs:element name="cusAddress" type="xs:string" minOccurs="0" />
+<xs:element name="cusImage" type="xs:base64Binary" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomer">
+<xs:sequence>
+<xs:element name="user" type="tns:customer" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkEmail">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customer" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomer">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customer" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkUsername">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkUsernameResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:customer" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCustomer">
+<xs:sequence>
+<xs:element name="user" type="tns:customer" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

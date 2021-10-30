@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8084/BusinessTier/BusinessService?wsdl" uri="src/conf/xml-resources/web-service-references/BusinessService/wsdl/localhost_8084/BusinessTier/BusinessService.wsdl"/>
+    <system systemId="http://localhost:8084/BusinessTier/BusinessService?xsd=1" uri="src/conf/xml-resources/web-service-references/BusinessService/wsdl/localhost_8084/BusinessTier/BusinessService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/BusinessTier/BusinessServices?wsdl" uri="src/conf/xml-resources/web-service-references/BusinessServices/wsdl/localhost_8080/BusinessTier/BusinessServices.wsdl"/>
+    <system systemId="http://localhost:8080/BusinessTier/BusinessServices?xsd=1" uri="src/conf/xml-resources/web-service-references/BusinessServices/wsdl/localhost_8080/BusinessTier/BusinessServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/DataTier/DataService?wsdl" uri="src/conf/xml-resources/web-service-references/DataService/wsdl/localhost_8084/DataTier/DataService.wsdl"/>
+    <system systemId="http://localhost:8084/DataTier/DataService?xsd=1" uri="src/conf/xml-resources/web-service-references/DataService/wsdl/localhost_8084/DataTier/DataService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/BusinessLogicTier/BusinessServices?xsd=2" uri="src/conf/xml-resources/web-service-references/BusinessServices/wsdl/localhost_8084/BusinessLogicTier/BusinessServices.xsd_2.xsd"/>
+    <system systemId="http://localhost:8084/BusinessLogicTier/BusinessServices?wsdl" uri="src/conf/xml-resources/web-service-references/BusinessServices/wsdl/localhost_8084/BusinessLogicTier/BusinessServices.wsdl"/>
+    <system systemId="http://localhost:8084/BusinessLogicTier/BusinessServices?xsd=1" uri="src/conf/xml-resources/web-service-references/BusinessServices/wsdl/localhost_8084/BusinessLogicTier/BusinessServices.xsd_1.xsd"/>
+</catalog>
