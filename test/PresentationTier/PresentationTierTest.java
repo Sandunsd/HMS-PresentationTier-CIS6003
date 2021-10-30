@@ -58,12 +58,12 @@ public class PresentationTierTest {
     @Test
     public void testCheckUsername() {
         System.out.println("checkUsername");
-        String username = "";
+        String username = "test";
         boolean expResult = false;
         boolean result = PresentationTier.checkUsername(username);
-        assertEquals(expResult, result);
+        assertEquals(true, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**

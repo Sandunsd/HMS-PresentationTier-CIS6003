@@ -1,6 +1,6 @@
 <%-- 
     Document   : createAccount
-    Created on : Oct 25, 2021, 12:07:01 AM
+    Created on : Oct 20, 2021, 12:07:01 AM
     Author     : Sadun
 --%>
 
@@ -18,7 +18,7 @@
            
             if (PresentationTier.deleteAppointment(username)) {
                        %>   <script>
-                 alert("Appointment created.");
+                 alert("Appointment deleted.");
                  location.href = "../appointment.jsp";
         </script>
         <%
